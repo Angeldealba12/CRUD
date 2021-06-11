@@ -47,9 +47,8 @@ const renderList = () => {
 
         const updateBtn = document.createElement("button");
         updateBtn.setAttribute("class", "update");
-        updateBtn.addEventListener("click", () => 
-        console.log('Este boton sirve para editar')
-        );
+        updateBtn.addEventListener("click", () => updateUser(index, user));
+        console.log('Este boton sirve para editar');
         updateBtn.setAttribute('id', 'update');
         updateBtn.innerText = 'Edit';
         actionButton.appendChild(updateBtn);
@@ -77,6 +76,15 @@ const createUser = event => {
     usersList.push(user);
     renderList();
 };
+
+const updateUser = (index, user) => {
+    console.log(index);
+    console.log(user);
+    document.getElementById("name").value = user.name;
+    document.getElementById("lastname").value = user.lastName;
+    document.getElementById("email").value = user.email;
+}
+
 
 const deleteUser = index => {
     usersList.splice(index, 1);
