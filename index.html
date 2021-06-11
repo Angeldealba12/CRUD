@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>CRUD by Angel De Alba</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <h1 class="title">CRUD VANILA JS</h1>
+      <div class="container">
+        <form action="#" id="addUser">
+          <div class="addUser">
+            <div class="field">
+              <label for="name">First Name: </label>
+              <input type="text"  id="name" />
+            </div>
+            <div class="field">
+              <label for="lastname">Last Name: </label>
+              <input
+                type="text"
+                id="lastname"
+              />
+            </div>
+            <div class="field">
+              <label for="email">Email: </label>
+              <input type="text" id="email" />
+            </div>
+          </div>
+          <div class="button-field">
+          <button type="submit" class="submitBtn" id="submitBtn">
+            Save user
+          </button>
+        </div>
+        </form>
+        <div class="userList" id="userList"></div>
+      </div>
+     </main>
+    <script src="main.js"></script>
+  </body>
+</html>
